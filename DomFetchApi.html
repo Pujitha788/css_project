@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main>div img{
+            width:100px;
+            height: 120px;   
+            object-fit: contain;
+        }
+        .cls{
+           display:grid;
+           grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); 
+           gap:10px;
+           padding:10px;
+           box-sizing: border-box;
+        }
+        .cls>div{
+            border:2px solid;
+            padding:10px;
+            text-align: center;
+        }
+        div>h3{
+            color:darkmagenta;
+            font-size: 1.2rem;
+        }
+        div>p{
+            color:rgb(135, 49, 216);
+            font-size: 1.2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main" class="cls"></div>
+    <script src="./DomFetchApi.js"></script>
+</body>
+</html>
